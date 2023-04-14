@@ -1,0 +1,13 @@
+--------------------------  lab4_conveer.pjt - Debug  --------------------------
+[example.asm] "C:\CCStudio_v3.1\C6000\cgtools\bin\cl6x" -g -fr"C:/CCStudio_v3.1/MyProjects/lab4_conveer/lab4_conveer/Debug" -d"_DEBUG" -@"Debug.lkf" "example.asm"
+
+[main.c] "C:\CCStudio_v3.1\C6000\cgtools\bin\cl6x" -g -fr"C:/CCStudio_v3.1/MyProjects/lab4_conveer/lab4_conveer/Debug" -d"_DEBUG" -@"Debug.lkf" "main.c"
+"main.c", line 19: warning: last line of file ends without a newline
+
+[proc.asm] "C:\CCStudio_v3.1\C6000\cgtools\bin\cl6x" -g -fr"C:/CCStudio_v3.1/MyProjects/lab4_conveer/lab4_conveer/Debug" -d"_DEBUG" -@"Debug.lkf" "proc.asm"
+
+[Linking...] "C:\CCStudio_v3.1\C6000\cgtools\bin\cl6x" -@"Debug.lkf"
+<Linking>
+
+Build Complete,
+  0 Errors, 1 Warnings, 0 Remarks.

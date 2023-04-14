@@ -1,0 +1,45 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectDir="C:\CCStudio_v3.1\MyProjects\lab4_conveer\lab4_conveer\"
+ProjectType=Executable
+CPUFamily=TMS320C62XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="..\..\..\C6000\cgtools\lib\rts6700.lib"
+Source="data.h"
+Source="example.asm"
+Source="main.c"
+Source="proc.asm"
+Source="script.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-g -fr"$(Proj_dir)\Debug" -d"_DEBUG"
+
+["Compiler" Settings: "Release"]
+Options=-o3 -fr"$(Proj_dir)\Release"
+
+["Linker" Settings: "Debug"]
+Options=-c -m".\Debug\lab4_conveer.map" -o".\Debug\lab4_conveer.out" -w -x
+
+["Linker" Settings: "Release"]
+Options=-c -m".\Release\lab4_conveer.map" -o".\Release\lab4_conveer.out" -w -x
+
+["data.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["data.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["script.cmd" Settings: "Debug"]
+LinkOrder=1
+
+["script.cmd" Settings: "Release"]
+LinkOrder=1
+
